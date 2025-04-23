@@ -63,7 +63,7 @@ Write a `Main.java` file that **instantiates your classes** and demonstrates how
 - Relationships between objects (e.g., adding students to a club)
 - System logic (e.g., calculating averages, removing from a list, printing summaries)
 
-> ✅ Level 4: Also includes **user interaction** like Scanner input or menu choices  
+> ✅ Level 4: Also includes **user interaction** like keyboard input or menu choices  
 > ❌ Level 2: Just prints object attributes one after another
 
 <br>
@@ -78,6 +78,24 @@ Write a `Main.java` file that **instantiates your classes** and demonstrates how
 | Main Program (10 pts)             | Instantiates all classes, shows relationships, includes input | Demonstrates relationships | Some relationships shown | Minimal or unclear demo |
 | Programming Style (4 pts)         | Proper formatting, naming, comments, javadocs | Mostly good style | Some issues | Poor readability |
 | Version Control (4 pts)           | Frequent commits, good README, clean GitHub repo | Moderate commits | Few commits | Poor version tracking |
+
+<br>
+
+## Suggested Project Timeline
+
+Use the guide below to pace yourself and ensure you're making steady progress.
+
+| **Task**                        | **What You Should Do**                                                                 | **Suggested Time** |
+|--------------------------------|----------------------------------------------------------------------------------------|---------------------|
+| **1. Choose a System**         | Pick a real-world or app-based system. Identify 3+ object types that interact.        | 1 class             |
+| **2. Design & UML Diagram**    | Define your classes, relationships, and draw a UML diagram using diagrams.net         | 1–1.5 classes       |
+| **3. Implement Classes**       | Write Java classes: private variables, constructors, methods, getters/setters         | 2 classes           |
+| **4. Add Relationships**       | Implement inheritance, aggregation (e.g., collections of objects)                     | 1.5 classes         |
+| **5. Write Main Program**      | Simulate your system in `Main.java`. Instantiate and connect your objects.            | 1.5 classes         |
+| **6. Add User Interaction**    | Add keyboard/menu input to reach Level 4 (optional but recommended)                    | 1 class             |
+| **7. Final Polish & GitHub**   | Write your README, upload UML diagram, push final commits to GitHub     | 0.5–1 class         |
+
+Stay on pace. Ask for help early if you're falling behind. A well-scoped, complete system will always earn more than an overly ambitious one that doesn’t work or is poorly implemented.
 
 <br>
 
