@@ -1,4 +1,4 @@
-# ICS4U OOP Design Assignment
+# ICS4U OOP Design Project
 
 See instructions [here](INSTRUCTIONS.md) for details.
 
