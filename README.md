@@ -1,8 +1,8 @@
-# ICS4U OOP Assignment
+# ICS4U OOP Design Assignment
 
-[*see instructions for details*](Instructions.md)
+See instructions [here](INSTRUCTIONS.md) for details.
 
-*Insert Class Diagram here*  
+*INSERT UML CLASS DIAGRAM HERE*  
 
 ## Summary
-*Include a brief summary that describes your system that your are modelling*
+*Write a brief summary that describes the real-world system you are modelling in your design.*

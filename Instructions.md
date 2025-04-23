@@ -1,71 +1,92 @@
-# ICS4U OOP Assignment
+# ICS4U OOP Design Project
 
-1. [Choose a System](#part-1---choose-a-system) 
-2. [Class Design & Diagram](#part-2---class-design--diagram) 
-3. [Class Implementation](#part-3---class-implementation)
-4. [Main Program](#part-4---main-program)
+## Overview
+In this project, you'll demonstrate your understanding of **Object-Oriented Programming (OOP)** by designing and implementing a Java-based system of your choice. This system should include clear object relationships, encapsulation, and class responsibility separation. Your focus should be on **good design, not excessive scope**.
 
-In this assignment, you will demonstrate your knowledge of OOP by applying object-oriented design to implement a system chosen by you.
+A successful project:
+- Has a clean, scalable structure
+- Uses OOP principles: **encapsulation, aggregation, inheritance**
+- Avoids being too large to implement fully and properly
 
-## Part 1 - Choose a System
-Think about the applications you interact with or the structures you participate in on a daily basis.  Within your home, school, work, on your phone, on your computer. For example:
-* A shopping cart checkout system for an online retailer
-* A Netflix user's "My List" of movies and shows and the recommendations that derive from it
-* A Spotify user's saved songs, albums and podcasts.
-* The organization of student membership to clubs and teams within a school
-* The hierarchy of staff at a company
-* The organization of shoes in a closet and the process of deciding what shoes to wear
-* An instagram post and the resulting likes and comments 
-* Uber ride service
-* A menu and checkout system for a food delivery service i.e UberEats, DoorDash
+<br>
 
-With any of these systems, ask yourself:
-* what are the *things* in this system?
-* what are the properties of these *things*?
-* what do these *things* do?
-* what are the relationships between these *things*?
- * Are some things made up of other things (aggregation)?
- * Are some things more specific versions of other things (inheritance)?
+## Part 1 – Choose a System
 
-Decide on a system to model with object-oriented design to be implemented in java. Consider something that consist of at least three objects such that relationships exist between them.
+Choose a real-world or digital system that can be modeled with **at least three interrelated object types**. Here are some sample systems:
 
-## Part 2 - Class Design & Diagram
-Decide on the objects that make up your system and for each, specify:
-* the object properties (instance variables)
-* the object methods
-* the relationships between the objects (aggregation, inheritance)
+- Playlist and Song organization in a music app
+- Students, Clubs, and Meetings in a school
+- Food delivery service: Menus, Orders, Customers
+- Online store with Products, Cart, and Orders
+- Social feed: Posts, Comments, Likes
 
-Use Diagram.net to create a class diagram of your system.  Follow the examples given in class and be sure to indicate the properties, methods, and relationships between classes.
+**Limit your scope** to something you can fully build within the timeline. More classes does not mean a better mark — deeper, cleaner class design is what earns marks.
 
-| Level  |  Criteria |
-|---|---|
-| Level 3  | 3 Classes and an aggregate relationship  |
-| Level 4  | 3+ Classes, aggregate relationship, inheritance/abstract relationship  |
+> ✅ Good scope: A playlist with songs, plus basic metadata and playback features  
+> ❌ Poor scope: All of Spotify with podcasts, AI suggestions, ads, user profiles
 
-### README.md
-Add your class diagram to the README.md document of this assignment and include a summary of the system you are modelling.
+<br>
 
+## Part 2 – Class Design & UML Diagram
 
-## Part 3 - Class Implementation
-Implement your classes in java.  Be sure to apply encapsulation practices here:
-* all instance variables are private
-* appropriate getter and setter methods defined
-* appropriate helper (private) methods defined
+Use diagrams.net to draw a **UML class diagram** of your system. Include:
+- Class names
+- Instance variables (with types)
+- Methods (with return types + parameters)
+- Relationships (aggregation, inheritance)
 
-If implementing inheritance relationships or abstract classes, remember that parent (super) classes or abstract class should be more generic than the child classes.  Child classes should not duplicate properties or methods defined at parent level (unless you are overriding methods i.e polymorphism).
+Follow our [UML house style](https://github.com/davecheng-tech/Random-Notes/blob/main/object-oriented-programming/uml-class-diagrams.md). Add your diagram (PNG format) and a short project description to your `README.md`.
 
+> ✅ Good UML: Shows reusable, abstract class like `Media` with `Song`, `Podcast` as subclasses  
+> ❌ Bad UML: Every class has only getters/setters, no useful logic or relationships
 
-## Part 4 - Main Program
-Create an executable main program that simulates your chosen system and demonstrates the usage (instantiation) of your defined classes and their relationships.  
+<br>
 
-For example, when modelling a classroom environment, a main program could:
-* set the teacher for a classroom
-* add students to the classroom
-* assign marks to the student
-* print a list of student marks 
-* print the average mark for the class
+## Part 3 – Class Implementation
 
-| Level  |  Criteria |
-|---|---|
-|  3  | Demonstration of system that includes instantiation of all classes, demonstration of relationships |
-|  4  | Demonstration of system that includes instantiation of all classes, demonstration of relationships.  Demonstration includes user interaction|
+Translate your UML into Java code. Your classes must:
+
+- Follow **encapsulation**: use `private` variables, and `public` getters/setters
+- Use helper methods to avoid long `main()` functions
+- Implement inheritance and method overriding where logical
+- Keep data types, naming, and responsibilities clean and consistent
+
+Avoid “dumb data classes” — your classes should **do things**, not just **store things**.
+
+<br>
+
+## Part 4 – Main Program Demonstration
+
+Write a `Main.java` file that **instantiates your classes** and demonstrates how your system works. You must show:
+
+- Objects being created and used
+- Relationships between objects (e.g., adding students to a club)
+- System logic (e.g., calculating averages, removing from a list, printing summaries)
+
+> ✅ Level 4: Also includes **user interaction** like Scanner input or menu choices  
+> ❌ Level 2: Just prints object attributes one after another
+
+<br>
+
+## Rubric (Total /46)
+
+| **Criteria**                       | **Level 4** | **Level 3** | **Level 2** | **Level 1** |
+|-----------------------------------|-------------|-------------|-------------|-------------|
+| Object-Oriented Design (12 pts)   | 3+ classes, aggregation + inheritance | 3 classes + aggregation | 3 classes, weak relationships | Limited design or unclear |
+| UML Diagram (6 pts)               | All classes, relationships, methods & variables shown clearly | Mostly accurate | Some missing structure | Diagram unclear or incomplete |
+| Class Implementation (10 pts)     | Fully implemented, encapsulated, clean | Mostly functional | Partial implementation | Errors or unclear logic |
+| Main Program (10 pts)             | Instantiates all classes, shows relationships, includes input | Demonstrates relationships | Some relationships shown | Minimal or unclear demo |
+| Programming Style (4 pts)         | Proper formatting, naming, comments, javadocs | Mostly good style | Some issues | Poor readability |
+| Version Control (4 pts)           | Frequent commits, good README, clean GitHub repo | Moderate commits | Few commits | Poor version tracking |
+
+<br>
+
+## Checklist Before Submission
+
+- [ ] System is realistic, scoped, and implementable
+- [ ] At least 3 meaningful object types
+- [ ] UML diagram included and follows house style
+- [ ] All classes implemented with encapsulation
+- [ ] Main program demonstrates class use and relationships
+- [ ] README includes system description and PNG diagram
+- [ ] Code pushed to GitHub with clear commit history
