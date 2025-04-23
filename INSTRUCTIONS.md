@@ -12,18 +12,41 @@ A successful project:
 
 ## Part 1 – Choose a System
 
-Choose a real-world or digital system that can be modeled with **at least three interrelated object types**. Here are some sample systems:
+Choose a real-world or digital system to model using object-oriented design. This could be something from your everyday life, school, home, or an app/service you use often.
 
-- Playlist and Song organization in a music app
-- Students, Clubs, and Meetings in a school
-- Food delivery service: Menus, Orders, Customers
-- Online store with Products, Cart, and Orders
-- Social feed: Posts, Comments, Likes
+Your system must include **at least three meaningful object types** that interact. Keep it simple and **fully implementable** within our project timeline.
 
-**Limit your scope** to something you can fully build within the timeline. More classes does not mean a better mark — deeper, cleaner class design is what earns marks.
+### Example Systems You Could Model
 
-> ✅ Good scope: A playlist with songs, plus basic metadata and playback features  
-> ❌ Poor scope: All of Spotify with podcasts, AI suggestions, ads, user profiles
+Think about the structures you interact with — not just on your phone or computer, but in real life too. Here are some ideas:
+
+#### Everyday Real-World Systems
+- **Shoe closet**: shoes categorized by type, season, or occasion; logic to decide what to wear
+- **Kitchen inventory**: ingredients, expiry tracking, recipe suggestions based on what's available
+- **Personal library**: books organized by genre/author, lend/return system
+- **Toolbox or garage**: tools grouped by function, with checkout or maintenance tracking
+- **Morning routine planner**: daily tasks with time estimates and dependency (e.g., breakfast before teeth brushing)
+
+#### School-Based Systems
+- **Clubs and events**: students, clubs, meetings, and leadership roles
+- **Course enrollment**: students, courses, schedules, prerequisites
+- **Classroom seating plan**: desks, students, layout preferences or rotations
+
+#### App-Style Digital Systems
+- **Streaming media app**: user list of shows, genres, and recommendations (e.g. Netflix)
+- **Music manager**: playlists, songs, artists, user favorites (e.g. Spotify)
+- **Food delivery**: menus, orders, restaurants, checkout (e.g. UberEats, DoorDash)
+- **Online store**: products, shopping cart, checkout, delivery tracking
+- **Social media post**: posts, comments, likes, users
+- **Ride-sharing**: drivers, riders, trips, fares (e.g. Uber)
+
+#### Organizational Systems
+- **Company hierarchy**: employees, roles, departments, manager-subordinate relationships
+- **Library checkout system**: books, borrowers, loans, overdue tracking
+- **Project management**: tasks, deadlines, team members, dependencies
+
+> ✅ Good scope: A music playlist system with a few extra features  
+> ❌ Too much: Trying to build all of Spotify with podcasts, radio, ads, etc.
 
 <br>
 
@@ -68,7 +91,58 @@ Write a `Main.java` file that **instantiates your classes** and demonstrates how
 
 <br>
 
-## Rubric (Total /46)
+# Helpful Tips & Resources
+
+## Don’t Just Store Data: Make Your Classes Do Work
+
+In this project, your classes shouldn’t just hold information — they should also **do something meaningful**.
+
+### What's A “Dumb Data Class"?
+
+These are classes that just store data, like this:
+
+```java
+public class Shoe {
+    private String type;
+    private String color;
+    private String size;
+
+    // Just getters and setters — no logic!
+}
+```
+
+This kind of class is **passive**. It doesn't help your system actually *do* anything.
+
+### Writing Classes That DO Things
+
+Good object-oriented design includes **behavior**, not just data. Your classes should have methods that act on their properties or help the system make decisions.
+
+Here are some ideas:
+
+#### Shoe Closet System
+
+Instead of just storing shoes, think about what a shoe or closet can *do*:
+
+**Shoe class**
+- `boolean isSuitableForWeather(String weather)`
+- `boolean matchesOutfit(String outfitColor)`
+- `void wear()` — mark this shoe as worn today
+
+**Closet class**
+- `Shoe suggestShoe(String weather, String occasion)`
+- `List<Shoe> getAllUnwornShoes()`
+
+The bottom line: **Don’t just describe objects — make them act**.
+
+Ask yourself:
+> What should this object know?  
+> What should this object be able to do?
+
+If your answer is "just store data", dig deeper.
+
+<br>
+
+## Assessment Rubric (Total /46)
 
 | **Criteria**                       | **Level 4** | **Level 3** | **Level 2** | **Level 1** |
 |-----------------------------------|-------------|-------------|-------------|-------------|
